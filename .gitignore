@@ -1,0 +1,4 @@
+IMAGES2.zip
+*.zip
+.DS_Store
+node_modules

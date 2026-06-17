@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us — Sonji</title>
+  <meta name="description" content="Learn about Sonji's mission to reshape digital stock and platform assets for creators and developers worldwide.">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+
+  <!-- Figma Canvas Mode Container -->
+  <div id="figma-container" class="figma-mode-disabled">
+    
+    <!-- Figma Top Toolbar -->
+    <div class="figma-toolbar">
+      <div class="figma-toolbar-left">
+        <div class="figma-menu-icon" title="Main Menu">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+        </div>
+        <div class="figma-tools">
+          <button class="tool-btn active" title="Move (V)">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71L12 2z"/></svg>
+          </button>
+          <button class="tool-btn" title="Region / Frame (F)">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M4 4h7v7H4zm9 0h7v7h-7zm0 9h7v7h-7zm-9 0h7v7H4z"/></svg>
+          </button>
+          <button class="tool-btn" title="Rectangle (R)">
+            <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><rect x="4" y="4" width="16" height="16" rx="2"/></svg>
+          </button>
+          <button class="tool-btn" title="Pen (P)">
+            <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"/></svg>
+          </button>
+          <button class="tool-btn" title="Text (T)">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M5 4v3h5.5v12h3V7H19V4H5z"/></svg>
+          </button>
+          <button class="tool-btn" title="Hand (H)">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 2a3 3 0 0 0-3 3v6.75l-1.25-.42a1.5 1.5 0 0 0-1.78.65 1.5 1.5 0 0 0 .53 2l4.5 2A6 6 0 0 0 17 19v-9a3 3 0 0 0-3-3 3 3 0 0 0-.25.01A3 3 0 0 0 12 2z"/></svg>
+          </button>
+          <button class="tool-btn" title="Add Comment (C)">
+            <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          </button>
+        </div>
+      </div>
+      <div class="figma-toolbar-center">
+        <span class="file-name">Sonji Web App Prototype</span>
+        <span class="file-status">Draft / Presenting</span>
+      </div>
+      <div class="figma-toolbar-right">
+        <div class="user-avatars">
+          <span class="avatar-circle" style="background-color: #ef4444;">A</span>
+          <span class="avatar-circle" style="background-color: #0db9b9;">S</span>
+        </div>
+        <button class="figma-btn share-btn">Share</button>
+        <button class="figma-btn play-btn" id="play-mode-btn" title="Return to Live Site View">
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Figma Workspace -->
+    <div class="figma-workspace">
+      <!-- Left Sidebar: Layers & Pages -->
+      <aside class="figma-sidebar left-sidebar">
+        <div class="sidebar-tabs">
+          <button class="tab-btn active">Layers</button>
+          <button class="tab-btn">Assets</button>
+        </div>
+        <div class="sidebar-content">
+          <div class="pages-list-container">
+            <div class="sidebar-header">Pages</div>
+            <ul class="pages-list">
+              <li>
+                <a href="index.html" class="page-link">
+                  <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+                  Home / Landing
+                </a>
+              </li>
+              <li>
+                <a href="about.html" class="page-link active">
+                  <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                  About Us
+                </a>
+              </li>
+              <li>
+                <a href="services.html" class="page-link">
+                  <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M12 2c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm9 7h-6v13h-2v-6h-2v6H9V9H3V7h18v2z"/></svg>
+                  Services
+                </a>
+              </li>
+              <li>
+                <a href="categories.html" class="page-link">
+                  <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H8V4h12v12z"/></svg>
+                  App Stock
+                </a>
+              </li>
+              <li>
+                <a href="contact.html" class="page-link">
+                  <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                  Contact Us
+                </a>
+              </li>
+            </ul>
+          </div>
+          
+          <div class="layers-list-container">
+            <div class="sidebar-header">Layers</div>
+            <ul class="layers-list" id="layers-list">
+              <!-- Rendered dynamically by javascript -->
+            </ul>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Central Figma Canvas Area -->
+      <main class="figma-canvas" id="figma-canvas">
+        <div class="canvas-grid-overlay"></div>
+        
+        <!-- Figma Frame Node -->
+        <div class="figma-frame-node" id="desktop-frame">
+          <div class="figma-frame-label">
+            <span class="frame-icon">#</span>
+            <span class="frame-text">Sonji Web - About Us</span>
+          </div>
+          
+          <!-- Web Viewport inside the Figma frame -->
+          <div class="website-viewport">
+
+            <!-- Header -->
+            <header>
+              <div class="container nav-container">
+                <div class="logo">
+                  <a href="index.html" class="logo-link">
+                    <span class="logo-dot"></span>
+                    Sonji
+                  </a>
+                </div>
+                <nav>
+                  <a href="index.html">Home</a>
+                  <a href="about.html" class="active">About</a>
+                  <a href="services.html">Services</a>
+                  <a href="categories.html">App Stock</a>
+                  <a href="contact.html">Contact</a>
+                </nav>
+                <div class="header-actions">
+                  <button class="btn btn-secondary btn-sm search-btn" aria-label="Search">
+                    <svg class="icon" viewBox="0 0 24 24" width="16" height="16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m21 21-6-6m2-5a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z"/></svg>
+                  </button>
+                  <a href="contact.html" class="btn btn-sm">Get Started</a>
+                </div>
+              </div>
+            </header>
+
+            <!-- Banner Hero Section -->
+            <section class="banner-hero" id="banner-hero-section">
+              <div class="hero-bg" style="background-image: url('assets/images/hero.png');"></div>
+              <div class="hero-overlay"></div>
+              <div class="container banner-container">
+                <span class="badge">Who We Are</span>
+                <h1>Empowering Creators & Developers</h1>
+                <p>Building the next generation of asset infrastructure with absolute focus on visual quality, utility, and modern code standards.</p>
+              </div>
+            </section>
+
+            <!-- Mission Section -->
+            <section class="mission-section" id="mission-section">
+              <div class="container grid-two-col">
+                <div class="mission-content">
+                  <span class="section-tag">Our Mission</span>
+                  <h2>Standardizing Digital Quality</h2>
+                  <p>At Sonji, we believe that digital assets shouldn't just look visually striking—they must also integrate smoothly into production environments. Too often, templates are plagued with bad nesting, excessive layout sizes, or inefficient assets. We seek to change that.</p>
+                  <p>Our platform focuses strictly on high-performance assets. From mobile flutter boilerplates to fully realized Figma designs, we curate, optimize, and bundle them so you can deploy elements in seconds.</p>
+                </div>
+                <div class="mission-stats">
+                  <div class="stat-card">
+                    <h3>99.9%</h3>
+                    <p>Asset Integrity Rate</p>
+                  </div>
+                  <div class="stat-card">
+                    <h3>2.5x</h3>
+                    <p>Faster Time-to-Market</p>
+                  </div>
+                  <div class="stat-card">
+                    <h3>50k+</h3>
+                    <p>Active Digital Creators</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- Values Section -->
+            <section class="values-section" id="values-section">
+              <div class="container">
+                <div class="section-header">
+                  <span class="section-tag">Our Core Principles</span>
+                  <h2>Why High-Performance Teams Choose Sonji</h2>
+                  <p class="section-desc">We base our curations on fundamental visual principles that drive actual product engagement.</p>
+                </div>
+
+                <div class="values-grid">
+                  <div class="value-card">
+                    <div class="value-num">01</div>
+                    <h3>Aesthetic Excellence</h3>
+                    <p>Every asset is audited by professional UI researchers to ensure modern, Apple-style design aesthetics are maintained.</p>
+                  </div>
+                  <div class="value-card">
+                    <div class="value-num">02</div>
+                    <h3>Developer Adaptability</h3>
+                    <p>Templates are built modularly. Whether you run React, Vue, iOS, or Android, our assets adjust with clean parameters.</p>
+                  </div>
+                  <div class="value-card">
+                    <div class="value-num">03</div>
+                    <h3>High Utility</h3>
+                    <p>We do not produce fluff. Every template serves a specific, conversion-focused layout objective.</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- CTA Banner -->
+            <section class="cta-banner-section" id="cta-banner-section">
+              <div class="container banner-inner">
+                <h2>Ready to upgrade your design system?</h2>
+                <p>Discover our meticulously crafted digital libraries and developer stock today.</p>
+                <a href="categories.html" class="btn">Browse Collections</a>
+              </div>
+            </section>
+
+            <!-- Footer -->
+            <footer id="footer-section">
+              <div class="container footer-container">
+                <div class="footer-brand">
+                  <div class="logo">
+                    <span class="logo-dot"></span>
+                    Sonji
+                  </div>
+                  <p>Curating high-performance assets for the modern web.</p>
+                </div>
+                <div class="footer-links">
+                  <div class="link-group">
+                    <h4>Explore</h4>
+                    <a href="categories.html">App Stock</a>
+                    <a href="services.html">Platform Features</a>
+                  </div>
+                  <div class="link-group">
+                    <h4>Company</h4>
+                    <a href="about.html">About Us</a>
+                    <a href="contact.html">Contact Us</a>
+                  </div>
+                </div>
+              </div>
+              <div class="footer-bottom">
+                <p>&copy; 2026 Sonji Inc. All rights reserved. ASE Project Prototype.</p>
+              </div>
+            </footer>
+
+          </div>
+        </div>
+      </main>
+
+      <!-- Right Sidebar: Inspect & Settings -->
+      <aside class="figma-sidebar right-sidebar">
+        <div class="sidebar-tabs">
+          <button class="tab-btn active">Design</button>
+          <button class="tab-btn">Prototype</button>
+          <button class="tab-btn">Inspect</button>
+        </div>
+        <div class="sidebar-content right-sidebar-content">
+          <div class="inspect-panel">
+            <div class="sidebar-header">Alignment</div>
+            <div class="align-tools">
+              <span class="align-icon" title="Align Left">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M4 19h2V5H4v14zm4-4h12v-2H8v2zm0-4h8V9H8v2z"/></svg>
+              </span>
+              <span class="align-icon" title="Align Horizontal Centers">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M8 19h3v3h2v-3h3v-2h-3v-4h4V9h-4V5h2V3h-2V1h-2v2H9v2h2v4H7v2h4v4H8v2z"/></svg>
+              </span>
+              <span class="align-icon" title="Align Right">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M20 19h2V5h-2v14zM4 15h12v-2H4v2zm4-4h8V9H8v2z"/></svg>
+              </span>
+              <span class="align-icon" title="Align Top">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M5 4v2h14V4H5zm4 4v12h2V8H9zm4 0v8h2V8h-2z"/></svg>
+              </span>
+              <span class="align-icon" title="Align Vertical Centers">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M19 11h-3V8h-2v3h-4V7H8v4H4v2h4v4h2v-4h4v3h2v-3h3v-2z"/></svg>
+              </span>
+              <span class="align-icon" title="Align Bottom">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M5 18h14v2H5v-2zm4-4h2V4H9v10zm4 0h2V4h-2v10z"/></svg>
+              </span>
+            </div>
+            
+            <div class="sidebar-header">Frame Details</div>
+            <div class="property-grid">
+              <div class="property-item"><span class="prop-label">W</span><span class="prop-val">1200</span></div>
+              <div class="property-item"><span class="prop-label">H</span><span class="prop-val" id="frame-height-display">1800</span></div>
+              <div class="property-item"><span class="prop-label">X</span><span class="prop-val">0</span></div>
+              <div class="property-item"><span class="prop-label">Y</span><span class="prop-val">0</span></div>
+            </div>
+
+            <div class="sidebar-header">Layer Styling Spec</div>
+            <div class="property-grid">
+              <div class="property-item full-width"><span class="prop-label">Layer</span><span class="prop-val text-truncate" id="selected-layer-name">❖ Sonji Web - About Us</span></div>
+              <div class="property-item"><span class="prop-label">Opacity</span><span class="prop-val">100%</span></div>
+              <div class="property-item"><span class="prop-label">Blend</span><span class="prop-val">Normal</span></div>
+            </div>
+
+            <div class="sidebar-header">Color Palette Tokens</div>
+            <div class="color-palette-list">
+              <div class="color-row">
+                <span class="color-swatch" style="background-color: #090b10; border: 1px solid rgba(255,255,255,0.2);"></span>
+                <span class="color-label">--color-bg: #090b10</span>
+              </div>
+              <div class="color-row">
+                <span class="color-swatch" style="background-color: #121620;"></span>
+                <span class="color-label">--color-surface: #121620</span>
+              </div>
+              <div class="color-row">
+                <span class="color-swatch" style="background-color: #0db9b9;"></span>
+                <span class="color-label">--color-primary: #0db9b9</span>
+              </div>
+              <div class="color-row">
+                <span class="color-swatch" style="background-color: #f3f4f6;"></span>
+                <span class="color-label">--color-text: #f3f4f6</span>
+              </div>
+            </div>
+
+            <div class="sidebar-header">Inspect CSS properties</div>
+            <div class="code-spec-container">
+              <pre><code class="css-spec-code" id="css-spec-content">/* Select any layer in the left sidebar to inspect its CSS styles in real-time. */</code></pre>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  <!-- Persistent Floating Trigger Button to switch to Figma canvas mode -->
+  <button id="figma-mode-toggle" class="figma-toggle-float" title="Switch between Figma Design View and Live Site View">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+    <span>Figma Design Mode</span>
+  </button>
+
+  <!-- Script -->
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
