@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sonji — Premium Digital Stock & Asset Platform</title>
+  <meta name="description" content="Sonji is a state-of-the-art digital stock and asset platform designed for modern creators, developers, and brands. Streamline your workflow with curated high-end assets.">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+
+  <!-- Figma Canvas Mode Container -->
+  <div id="figma-container" class="figma-mode-disabled">
+    
+    <!-- Figma Top Toolbar -->
+    <div class="figma-toolbar">
+      <div class="figma-toolbar-left">
+        <div class="figma-menu-icon" title="Main Menu">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+        </div>
+        <div class="figma-tools">
+          <button class="tool-btn active" title="Move (V)">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71L12 2z"/></svg>
+          </button>
+          <button class="tool-btn" title="Region / Frame (F)">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M4 4h7v7H4zm9 0h7v7h-7zm0 9h7v7h-7zm-9 0h7v7H4z"/></svg>
+          </button>
+          <button class="tool-btn" title="Rectangle (R)">
+            <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><rect x="4" y="4" width="16" height="16" rx="2"/></svg>
+          </button>
+          <button class="tool-btn" title="Pen (P)">
+            <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"/></svg>
+          </button>
+          <button class="tool-btn" title="Text (T)">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M5 4v3h5.5v12h3V7H19V4H5z"/></svg>
+          </button>
+          <button class="tool-btn" title="Hand (H)">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 2a3 3 0 0 0-3 3v6.75l-1.25-.42a1.5 1.5 0 0 0-1.78.65 1.5 1.5 0 0 0 .53 2l4.5 2A6 6 0 0 0 17 19v-9a3 3 0 0 0-3-3 3 3 0 0 0-.25.01A3 3 0 0 0 12 2z"/></svg>
+          </button>
+          <button class="tool-btn" title="Add Comment (C)">
+            <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          </button>
+        </div>
+      </div>
+      <div class="figma-toolbar-center">
+        <span class="file-name">Sonji Web App Prototype</span>
+        <span class="file-status">Draft / Presenting</span>
+      </div>
+      <div class="figma-toolbar-right">
+        <div class="user-avatars">
+          <span class="avatar-circle" style="background-color: #ef4444;">A</span>
+          <span class="avatar-circle" style="background-color: #0db9b9;">S</span>
+        </div>
+        <button class="figma-btn share-btn">Share</button>
+        <button class="figma-btn play-btn" id="play-mode-btn" title="Return to Live Site View">
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Figma Workspace -->
+    <div class="figma-workspace">
+      <!-- Left Sidebar: Layers & Pages -->
+      <aside class="figma-sidebar left-sidebar">
+        <div class="sidebar-tabs">
+          <button class="tab-btn active">Layers</button>
+          <button class="tab-btn">Assets</button>
+        </div>
+        <div class="sidebar-content">
+          <div class="pages-list-container">
+            <div class="sidebar-header">Pages</div>
+            <ul class="pages-list">
+              <li>
+                <a href="index.html" class="page-link active">
+                  <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+                  Home / Landing
+                </a>
+              </li>
+              <li>
+                <a href="about.html" class="page-link">
+                  <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                  About Us
+                </a>
+              </li>
+              <li>
+                <a href="services.html" class="page-link">
+                  <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M12 2c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm9 7h-6v13h-2v-6h-2v6H9V9H3V7h18v2z"/></svg>
+                  Services
+                </a>
+              </li>
+              <li>
+                <a href="categories.html" class="page-link">
+                  <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H8V4h12v12z"/></svg>
+                  App Stock
+                </a>
+              </li>
+              <li>
+                <a href="contact.html" class="page-link">
+                  <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                  Contact Us
+                </a>
+              </li>
+            </ul>
+          </div>
+          
+          <div class="layers-list-container">
+            <div class="sidebar-header">Layers</div>
+            <ul class="layers-list" id="layers-list">
+              <!-- Rendered dynamically by javascript -->
+            </ul>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Central Figma Canvas Area -->
+      <main class="figma-canvas" id="figma-canvas">
+        <div class="canvas-grid-overlay"></div>
+        
+        <!-- Figma Frame Node -->
+        <div class="figma-frame-node" id="desktop-frame">
+          <div class="figma-frame-label">
+            <span class="frame-icon">#</span>
+            <span class="frame-text">Sonji Web - Desktop Landing</span>
+          </div>
+          
+          <!-- Web Viewport inside the Figma frame -->
+          <div class="website-viewport">
+
+            <!-- Header -->
+            <header>
+              <div class="container nav-container">
+                <div class="logo">
+                  <a href="index.html" class="logo-link">
+                    <span class="logo-dot"></span>
+                    Sonji
+                  </a>
+                </div>
+                <nav>
+                  <a href="index.html" class="active">Home</a>
+                  <a href="about.html">About</a>
+                  <a href="services.html">Services</a>
+                  <a href="categories.html">App Stock</a>
+                  <a href="contact.html">Contact</a>
+                </nav>
+                <div class="header-actions">
+                  <button class="btn btn-secondary btn-sm search-btn" aria-label="Search">
+                    <svg class="icon" viewBox="0 0 24 24" width="16" height="16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m21 21-6-6m2-5a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z"/></svg>
+                  </button>
+                  <a href="contact.html" class="btn btn-sm">Get Started</a>
+                </div>
+              </div>
+            </header>
+
+            <!-- Hero Section -->
+            <section class="hero-section" id="hero-section">
+              <div class="hero-sticky-container">
+                <canvas id="exploded-canvas" class="hero-canvas-bg"></canvas>
+                <div class="hero-overlay"></div>
+                <div class="container hero-container">
+                  <span class="badge">Introducing Sonji v1.0</span>
+                  <h1 class="hero-title">The Next Generation of Digital Assets</h1>
+                  <p class="hero-subtitle">Elevate your creative workflow with curated, premium assets, high-fidelity source code templates, and developer stock optimized for seamless integration.</p>
+                  <div class="hero-ctas">
+                    <a href="categories.html" class="btn">Explore Asset Stock</a>
+                    <a href="about.html" class="btn btn-secondary">Learn More &rarr;</a>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+
+            <!-- Category Section (3D Flippable Cards) -->
+            <section id="categories" class="categories-section">
+              <div class="container">
+                <div class="section-header">
+                  <span class="section-tag">Curated Collections</span>
+                  <h2>Explore Asset Classes</h2>
+                  <p class="section-desc">Browse through premium, hand-crafted categories designed to fit high-end software development, UI/UX designs, and motion assets. <span class="accent-text">Hover cards to flip.</span></p>
+                </div>
+                
+                <div class="categories-grid">
+                  <!-- Card 1 -->
+                  <div class="category-card flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <div class="card-img-wrapper">
+                          <img src="assets/images/cat_card_1.png" alt="Mobile App UI Kits">
+                        </div>
+                        <div class="card-content">
+                          <h3>Mobile App Kits</h3>
+                          <p>Premium templates and source-code structures for Flutter and Swift iOS apps.</p>
+                          <span class="card-badge">240+ Assets</span>
+                        </div>
+                      </div>
+                      <div class="flip-card-back">
+                        <div class="back-content">
+                          <div class="back-icon">📱</div>
+                          <h3>Mobile App Kits</h3>
+                          <p class="back-details">Includes Flutter & Swift templates, responsive layouts, 60+ UI screens, and clean navigation architecture.</p>
+                          <div class="back-stats">
+                            <span><strong>Format:</strong> .fig, .dart, .swift</span>
+                            <span><strong>Size:</strong> 142 MB</span>
+                          </div>
+                          <a href="contact.html" class="btn btn-sm">Download Assets</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <!-- Card 2 -->
+                  <div class="category-card flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <div class="card-img-wrapper">
+                          <img src="assets/images/cat_card_2.png" alt="SaaS Web Layouts">
+                        </div>
+                        <div class="card-content">
+                          <h3>SaaS Web Templates</h3>
+                          <p>Responsive, high-converting Landing Pages built with modern framework components.</p>
+                          <span class="card-badge">180+ Assets</span>
+                        </div>
+                      </div>
+                      <div class="flip-card-back">
+                        <div class="back-content">
+                          <div class="back-icon">💻</div>
+                          <h3>SaaS Web Templates</h3>
+                          <p class="back-details">Next.js & HTML5 landing pages, integrated TailwindCSS configurations, SEO-friendly layout components.</p>
+                          <div class="back-stats">
+                            <span><strong>Format:</strong> .html, .js, .tsx</span>
+                            <span><strong>Size:</strong> 88 MB</span>
+                          </div>
+                          <a href="contact.html" class="btn btn-sm">Download Assets</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <!-- Card 3 -->
+                  <div class="category-card flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <div class="card-img-wrapper">
+                          <img src="assets/images/cat_card_3.png" alt="Design Systems">
+                        </div>
+                        <div class="card-content">
+                          <h3>Design Systems</h3>
+                          <p>Figma variables, component libraries, and visual guidelines styled to perfection.</p>
+                          <span class="card-badge">90+ Libraries</span>
+                        </div>
+                      </div>
+                      <div class="flip-card-back">
+                        <div class="back-content">
+                          <div class="back-icon">🎨</div>
+                          <h3>Design Systems</h3>
+                          <p class="back-details">Complete Figma UI kits with design tokens, dynamic components, responsive grids, and dark/light modes.</p>
+                          <div class="back-stats">
+                            <span><strong>Format:</strong> .fig, .tokens</span>
+                            <span><strong>Size:</strong> 215 MB</span>
+                          </div>
+                          <a href="contact.html" class="btn btn-sm">Download Assets</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <!-- Card 4 -->
+                  <div class="category-card flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <div class="card-img-wrapper">
+                          <img src="assets/images/cat_card_4.png" alt="3D & Vector Assets">
+                        </div>
+                        <div class="card-content">
+                          <h3>3D & Vector Assets</h3>
+                          <p>Ultra-premium abstract 3D elements and vector illustrations in multiple formats.</p>
+                          <span class="card-badge">310+ Assets</span>
+                        </div>
+                      </div>
+                      <div class="flip-card-back">
+                        <div class="back-content">
+                          <div class="back-icon">✨</div>
+                          <h3>3D & Vector Assets</h3>
+                          <p class="back-details">High-polygon 3D meshes, isolated PNGs, fully customizable vectors, and cinematic rendering scenes.</p>
+                          <div class="back-stats">
+                            <span><strong>Format:</strong> .obj, .blend, .svg</span>
+                            <span><strong>Size:</strong> 450 MB</span>
+                          </div>
+                          <a href="contact.html" class="btn btn-sm">Download Assets</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Card 5 -->
+                  <div class="category-card flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <div class="card-img-wrapper">
+                          <img src="assets/images/cat_card_5.png" alt="Motion & Audio">
+                        </div>
+                        <div class="card-content">
+                          <h3>Motion & Audio</h3>
+                          <p>Cinematic transitions, animations, and background audio to keep users engaged.</p>
+                          <span class="card-badge">150+ Assets</span>
+                        </div>
+                      </div>
+                      <div class="flip-card-back">
+                        <div class="back-content">
+                          <div class="back-icon">🎵</div>
+                          <h3>Motion & Audio</h3>
+                          <p class="back-details">Lottie micro-animations, cinematic intro SFX, background corporate-ambient soundtracks, and transition effects.</p>
+                          <div class="back-stats">
+                            <span><strong>Format:</strong> .json, .wav, .mp3</span>
+                            <span><strong>Size:</strong> 310 MB</span>
+                          </div>
+                          <a href="contact.html" class="btn btn-sm">Download Assets</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- AI Ads Showcase Section -->
+            <section id="ai-ads-section" class="ai-ads-section">
+              <div class="container">
+                <div class="section-header">
+                  <span class="section-tag">AI Generated Assets</span>
+                  <h2>Display Your AI Ads</h2>
+                  <p class="section-desc">Explore premium AI-generated assets, visual placeholders, and high-fidelity machine learning artwork ready for display campaigns. <span class="accent-text">Hover cards to flip.</span></p>
+                </div>
+
+                <div class="carousel-wrapper" id="ai-carousel">
+                  <button class="carousel-btn prev-btn" aria-label="Previous">
+                    <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
+                  </button>
+                  <button class="carousel-btn next-btn" aria-label="Next">
+                    <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M10.59 6L9.17 7.41 13.58 12l-4.41 4.59L10.59 18l6-6z"/></svg>
+                  </button>
+                  <div class="carousel-track">
+                  <!-- Card 1 -->
+                  <div class="carousel-slide">
+                    <div class="ad-card flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <div class="ad-img-wrapper">
+                          <img src="assets/images/ai_ad_1.png" alt="Cybernetic Neural Face">
+                        </div>
+                        <div class="ad-content">
+                          <h3>Cybernetic Neural Face</h3>
+                          <span class="card-badge">Midjourney v6</span>
+                        </div>
+                      </div>
+                      <div class="flip-card-back">
+                        <div class="back-content">
+                          <div class="back-icon">🤖</div>
+                          <h3>Neural Face</h3>
+                          <p class="back-details">High-fidelity cybernetic face with glowing neural pathways, ideal for cyber tech backgrounds and AI landing pages.</p>
+                          <div class="back-stats">
+                            <span><strong>Resolution:</strong> 4096 x 4096 px</span>
+                            <span><strong>Format:</strong> PNG, WebP</span>
+                          </div>
+                          <a href="contact.html" class="btn btn-sm">Download Asset</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  </div>
+                  <!-- Card 2 -->
+                  <div class="carousel-slide">
+                    <div class="ad-card flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <div class="ad-img-wrapper">
+                          <img src="assets/images/ai_ad_2.png" alt="Quantum AI Core">
+                        </div>
+                        <div class="ad-content">
+                          <h3>Quantum AI Core</h3>
+                          <span class="card-badge">DALL-E 3</span>
+                        </div>
+                      </div>
+                      <div class="flip-card-back">
+                        <div class="back-content">
+                          <div class="back-icon">⚙️</div>
+                          <h3>AI Processor Core</h3>
+                          <p class="back-details">Detailed visual of a quantum chip with bright neon AI circuitry, perfect for hardware-themed posts.</p>
+                          <div class="back-stats">
+                            <span><strong>Resolution:</strong> 4096 x 4096 px</span>
+                            <span><strong>Format:</strong> PNG, SVG</span>
+                          </div>
+                          <a href="contact.html" class="btn btn-sm">Download Asset</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  </div>
+                  <!-- Card 3 -->
+                  <div class="carousel-slide">
+                    <div class="ad-card flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <div class="ad-img-wrapper">
+                          <img src="assets/images/ai_ad_3.png" alt="Bio-Synthesized Android">
+                        </div>
+                        <div class="ad-content">
+                          <h3>Bio-Synthesized Android</h3>
+                          <span class="card-badge">Midjourney v6</span>
+                        </div>
+                      </div>
+                      <div class="flip-card-back">
+                        <div class="back-content">
+                          <div class="back-icon">👩‍💻</div>
+                          <h3>Android Cyborg</h3>
+                          <p class="back-details">Futuristic female android concept with gold accent goggles and integrated hardware components.</p>
+                          <div class="back-stats">
+                            <span><strong>Resolution:</strong> 4096 x 4096 px</span>
+                            <span><strong>Format:</strong> PNG, WebP</span>
+                          </div>
+                          <a href="contact.html" class="btn btn-sm">Download Asset</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  </div>
+                  <!-- Card 4 -->
+                  <div class="carousel-slide">
+                    <div class="ad-card flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <div class="ad-img-wrapper">
+                          <img src="assets/images/ai_ad_4.png" alt="Tactile Audio Node">
+                        </div>
+                        <div class="ad-content">
+                          <h3>Tactile Audio Node</h3>
+                          <span class="card-badge">Stable Diffusion</span>
+                        </div>
+                      </div>
+                      <div class="flip-card-back">
+                        <div class="back-content">
+                          <div class="back-icon">🎧</div>
+                          <h3>Tactile Audio</h3>
+                          <p class="back-details">Futuristic head profile wearing tactile audio node headphones, optimized for audio player templates.</p>
+                          <div class="back-stats">
+                            <span><strong>Resolution:</strong> 3072 x 4096 px</span>
+                            <span><strong>Format:</strong> PNG, WebP</span>
+                          </div>
+                          <a href="contact.html" class="btn btn-sm">Download Asset</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- Crypto Ads Showcase Section -->
+            <section id="crypto-ads-section" class="crypto-ads-section">
+              <div class="container">
+                <div class="section-header">
+                  <span class="section-tag">Blockchain Visuals</span>
+                  <h2>Display Your Crypto Ads</h2>
+                  <p class="section-desc">High-quality Web3 illustrations, 3D token representations, and decentralized design assets to power your DeFi and NFT applications. <span class="accent-text">Hover cards to flip.</span></p>
+                </div>
+
+                <div class="marquee-wrapper" id="crypto-marquee">
+                  <div class="marquee-track">
+                  <!-- Card 1 -->
+                  <div class="ad-card flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <div class="ad-img-wrapper">
+                          <img src="assets/images/crypto_ad_1.png" alt="Bull Crypto Trader">
+                        </div>
+                        <div class="ad-content">
+                          <h3>Bull Market Beast</h3>
+                          <span class="card-badge">3D Illustration</span>
+                        </div>
+                      </div>
+                      <div class="flip-card-back">
+                        <div class="back-content">
+                          <div class="back-icon">🐂</div>
+                          <h3>Bull Market Beast</h3>
+                          <p class="back-details">Powerful cyberpunk bull trader monitoring neon candlestick charts, ideal for trading terminals and Web3 platforms.</p>
+                          <div class="back-stats">
+                            <span><strong>Resolution:</strong> 3840 x 4800 px</span>
+                            <span><strong>Format:</strong> PNG, PSD</span>
+                          </div>
+                          <a href="contact.html" class="btn btn-sm">Download Asset</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Card 2 -->
+                  <div class="ad-card flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <div class="ad-img-wrapper">
+                          <img src="assets/images/crypto_ad_2.png" alt="Crypto Silver Coin">
+                        </div>
+                        <div class="ad-content">
+                          <h3>Decentralized Silver Token</h3>
+                          <span class="card-badge">3D Render</span>
+                        </div>
+                      </div>
+                      <div class="flip-card-back">
+                        <div class="back-content">
+                          <div class="back-icon">🪙</div>
+                          <h3>Silver Token</h3>
+                          <p class="back-details">Chrome-plated decentralized ledger coin floating in high-fidelity space, perfect for digital wallet covers.</p>
+                          <div class="back-stats">
+                            <span><strong>Resolution:</strong> 4096 x 4096 px</span>
+                            <span><strong>Format:</strong> PNG, OBJ</span>
+                          </div>
+                          <a href="contact.html" class="btn btn-sm">Download Asset</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Card 3 -->
+                  <div class="ad-card flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <div class="ad-img-wrapper">
+                          <img src="assets/images/crypto_ad_3.png" alt="Crypto Isometric Block">
+                        </div>
+                        <div class="ad-content">
+                          <h3>Hyper-Dimensional Node</h3>
+                          <span class="card-badge">3D Isometric</span>
+                        </div>
+                      </div>
+                      <div class="flip-card-back">
+                        <div class="back-content">
+                          <div class="back-icon">💎</div>
+                          <h3>Hyper Node</h3>
+                          <p class="back-details">Glowing neon grid platform showing decentralized data blocks, ideal for blockchain analytics headers.</p>
+                          <div class="back-stats">
+                            <span><strong>Resolution:</strong> 3840 x 4800 px</span>
+                            <span><strong>Format:</strong> PNG, Cinema4D</span>
+                          </div>
+                          <a href="contact.html" class="btn btn-sm">Download Asset</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- Features / Services Section -->
+            <section id="features-section" class="features-section">
+              <div class="container">
+                <div class="section-header">
+                  <span class="section-tag">Platform Features</span>
+                  <h2>Engineered for High-Performance Teams</h2>
+                  <p class="section-desc">We build tools and host digital assets optimized for execution speed, beautiful typography, and high visual excellence.</p>
+                </div>
+
+                <div class="features-grid">
+                  <!-- Feature 1 -->
+                  <div class="feature-card">
+                    <div class="feature-icon">
+                      <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                    </div>
+                    <h3>Ultra-Consistent Spacing</h3>
+                    <p>Every asset complies with a strict mathematical grid ensuring pixel-perfect layout implementation across web and mobile viewports.</p>
+                  </div>
+
+                  <!-- Feature 2 -->
+                  <div class="feature-card">
+                    <div class="feature-icon">
+                      <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"></path><path d="M12 16V12"></path><path d="M12 8H12.01"></path></svg>
+                    </div>
+                    <h3>Curated Premium Only</h3>
+                    <p>We do not allow generic, cluttered submissions. Every single item undergoes a rigorous design and performance audit before release.</p>
+                  </div>
+
+                  <!-- Feature 3 -->
+                  <div class="feature-card">
+                    <div class="feature-icon">
+                      <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="m21 16-5.07-5.07a10 10 0 0 0-14.12 0L1 12.5"></path><path d="M10 16H3"></path><path d="M14 8h7"></path></svg>
+                    </div>
+                    <h3>Developer Ready</h3>
+                    <p>Clean HTML structure, optimized TailwindCSS configurations, or pure CSS variables shipped alongside graphic layouts for frictionless coding.</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- How It Works Section -->
+            <section id="how-it-works-section" class="how-it-works-section">
+              <div class="container">
+                <div class="section-header">
+                  <span class="section-tag">Workflow</span>
+                  <h2>How Sonji Empowers Creators</h2>
+                  <p class="section-desc">Get beautiful assets from concept to production in less time than ever.</p>
+                </div>
+
+                <div class="steps-flow">
+                  <!-- Step 1 -->
+                  <div class="step-item">
+                    <div class="step-number">01</div>
+                    <div class="step-info">
+                      <h3>Select Category</h3>
+                      <p>Navigate our organized collections of developer templates, UI systems, or motion visuals.</p>
+                    </div>
+                  </div>
+
+                  <!-- Step 2 -->
+                  <div class="step-item">
+                    <div class="step-number">02</div>
+                    <div class="step-info">
+                      <h3>Preview & Customise</h3>
+                      <p>Use interactive sandboxes and variable configurators to check components in dark and light themes.</p>
+                    </div>
+                  </div>
+
+                  <!-- Step 3 -->
+                  <div class="step-item">
+                    <div class="step-number">03</div>
+                    <div class="step-info">
+                      <h3>Integrate Instantly</h3>
+                      <p>Download structured packages complete with assets, raw vector files, and ready-to-run UI code templates.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- About / Info Section -->
+            <section id="about-info-section" class="about-info-section">
+              <div class="container info-grid">
+                <div class="info-content">
+                  <span class="section-tag">Our Vision</span>
+                  <h2>Building the Future of Asset Distribution</h2>
+                  <p>Sonji is founded on the principle that digital assets shouldn't just look pretty—they need to perform, scale, and integrate beautifully into real-world codebases. We bridges the gap between high-end visual design and modern engineering standards.</p>
+                  <p>Our dedicated team of curators and developers ensures that each stock element follows current best practices, accessible contrast standards, and lightweight load requirements.</p>
+                  <a href="about.html" class="btn btn-secondary">Read Our Story</a>
+                </div>
+                <div class="info-visual">
+                  <div class="dashboard-preview">
+                    <div class="db-header">
+                      <span class="db-dot red"></span>
+                      <span class="db-dot yellow"></span>
+                      <span class="db-dot green"></span>
+                    </div>
+                    <div class="db-body">
+                      <div class="db-line short"></div>
+                      <div class="db-line long"></div>
+                      <div class="db-line medium"></div>
+                      <div class="db-grid">
+                        <div class="db-box"></div>
+                        <div class="db-box"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- Contact / Lead CTA Section -->
+            <section id="contact-section" class="contact-section">
+              <div class="container contact-container">
+                <div class="contact-header">
+                  <span class="section-tag">Let's Connect</span>
+                  <h2>Request Early Platform Access</h2>
+                  <p>Be the first to know when Sonji launches. Sign up to get custom digital assets, beta builds, and special launch offers directly in your inbox.</p>
+                </div>
+
+                <form class="contact-form" onsubmit="event.preventDefault(); alert('Lead Form Submissions are disabled in Phase 1.');">
+                  <div class="form-row">
+                    <div class="form-group">
+                      <label for="name">Full Name</label>
+                      <input type="text" id="name" placeholder="John Doe" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="email">Work Email</label>
+                      <input type="email" id="email" placeholder="john@company.com" required>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="interest">Asset Class Interest</label>
+                    <input type="text" id="interest" placeholder="e.g. Mobile Apps, SaaS Templates, Figma libraries">
+                  </div>
+                  <button type="submit" class="btn btn-full">Join the Waitlist</button>
+                </form>
+              </div>
+            </section>
+
+            <!-- Footer -->
+            <footer id="footer-section">
+              <div class="container footer-container">
+                <div class="footer-brand">
+                  <div class="logo">
+                    <span class="logo-dot"></span>
+                    Sonji
+                  </div>
+                  <p>Curating high-performance assets for the modern web.</p>
+                </div>
+                <div class="footer-links">
+                  <div class="link-group">
+                    <h4>Explore</h4>
+                    <a href="categories.html">App Stock</a>
+                    <a href="services.html">Platform Features</a>
+                  </div>
+                  <div class="link-group">
+                    <h4>Company</h4>
+                    <a href="about.html">About Us</a>
+                    <a href="contact.html">Contact Us</a>
+                  </div>
+                </div>
+              </div>
+              <div class="footer-bottom">
+                <p>&copy; 2026 Sonji Inc. All rights reserved. ASE Project Prototype.</p>
+              </div>
+            </footer>
+
+          </div>
+        </div>
+      </main>
+
+      <!-- Right Sidebar: Inspect & Settings -->
+      <aside class="figma-sidebar right-sidebar">
+        <div class="sidebar-tabs">
+          <button class="tab-btn active">Design</button>
+          <button class="tab-btn">Prototype</button>
+          <button class="tab-btn">Inspect</button>
+        </div>
+        <div class="sidebar-content right-sidebar-content">
+          <div class="inspect-panel">
+            <div class="sidebar-header">Alignment</div>
+            <div class="align-tools">
+              <span class="align-icon" title="Align Left">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M4 19h2V5H4v14zm4-4h12v-2H8v2zm0-4h8V9H8v2z"/></svg>
+              </span>
+              <span class="align-icon" title="Align Horizontal Centers">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M8 19h3v3h2v-3h3v-2h-3v-4h4V9h-4V5h2V3h-2V1h-2v2H9v2h2v4H7v2h4v4H8v2z"/></svg>
+              </span>
+              <span class="align-icon" title="Align Right">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M20 19h2V5h-2v14zM4 15h12v-2H4v2zm4-4h8V9H8v2z"/></svg>
+              </span>
+              <span class="align-icon" title="Align Top">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M5 4v2h14V4H5zm4 4v12h2V8H9zm4 0v8h2V8h-2z"/></svg>
+              </span>
+              <span class="align-icon" title="Align Vertical Centers">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M19 11h-3V8h-2v3h-4V7H8v4H4v2h4v4h2v-4h4v3h2v-3h3v-2z"/></svg>
+              </span>
+              <span class="align-icon" title="Align Bottom">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M5 18h14v2H5v-2zm4-4h2V4H9v10zm4 0h2V4h-2v10z"/></svg>
+              </span>
+            </div>
+            
+            <div class="sidebar-header">Frame Details</div>
+            <div class="property-grid">
+              <div class="property-item"><span class="prop-label">W</span><span class="prop-val">1200</span></div>
+              <div class="property-item"><span class="prop-label">H</span><span class="prop-val" id="frame-height-display">3820</span></div>
+              <div class="property-item"><span class="prop-label">X</span><span class="prop-val">0</span></div>
+              <div class="property-item"><span class="prop-label">Y</span><span class="prop-val">0</span></div>
+            </div>
+
+            <div class="sidebar-header">Layer Styling Spec</div>
+            <div class="property-grid">
+              <div class="property-item full-width"><span class="prop-label">Layer</span><span class="prop-val text-truncate" id="selected-layer-name">❖ Sonji Web - Desktop Landing</span></div>
+              <div class="property-item"><span class="prop-label">Opacity</span><span class="prop-val">100%</span></div>
+              <div class="property-item"><span class="prop-label">Blend</span><span class="prop-val">Normal</span></div>
+            </div>
+
+            <div class="sidebar-header">Color Palette Tokens</div>
+            <div class="color-palette-list">
+              <div class="color-row">
+                <span class="color-swatch" style="background-color: #090b10; border: 1px solid rgba(255,255,255,0.2);"></span>
+                <span class="color-label">--color-bg: #090b10</span>
+              </div>
+              <div class="color-row">
+                <span class="color-swatch" style="background-color: #121620;"></span>
+                <span class="color-label">--color-surface: #121620</span>
+              </div>
+              <div class="color-row">
+                <span class="color-swatch" style="background-color: #0db9b9;"></span>
+                <span class="color-label">--color-primary: #0db9b9</span>
+              </div>
+              <div class="color-row">
+                <span class="color-swatch" style="background-color: #f3f4f6;"></span>
+                <span class="color-label">--color-text: #f3f4f6</span>
+              </div>
+            </div>
+
+            <div class="sidebar-header">Inspect CSS properties</div>
+            <div class="code-spec-container">
+              <pre><code class="css-spec-code" id="css-spec-content">/* Select any layer in the left sidebar to inspect its CSS styles in real-time. */</code></pre>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  <!-- Persistent Floating Trigger Button to switch to Figma canvas mode -->
+  <button id="figma-mode-toggle" class="figma-toggle-float" title="Switch between Figma Design View and Live Site View">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+    <span>Figma Design Mode</span>
+  </button>
+
+  <!-- Script -->
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
