@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sonji — Premium Digital Stock & Asset Platform</title>
-  <meta name="description" content="Sonji is a state-of-the-art digital stock and asset platform designed for modern creators, developers, and brands. Streamline your workflow with curated high-end assets.">
+  <title>AppStock EXCHANGE — Premium Digital Stock & Asset Platform</title>
+  <meta name="description" content="AppStock EXCHANGE is a state-of-the-art digital stock and asset platform designed for modern creators, developers, and brands. Streamline your workflow with curated high-end assets.">
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
   <!-- Stylesheet -->
-  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/main.css?v=1.1.2">
 </head>
 <body>
 
@@ -48,7 +48,7 @@
         </div>
       </div>
       <div class="figma-toolbar-center">
-        <span class="file-name">Sonji Web App Prototype</span>
+        <span class="file-name">AppStock EXCHANGE Web App Prototype</span>
         <span class="file-status">Draft / Presenting</span>
       </div>
       <div class="figma-toolbar-right">
@@ -100,6 +100,12 @@
                 </a>
               </li>
               <li>
+                <a href="gtm-expert.html" class="page-link">
+                  <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  GTM/CTA Expert
+                </a>
+              </li>
+              <li>
                 <a href="contact.html" class="page-link">
                   <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
                   Contact Us
@@ -125,7 +131,7 @@
         <div class="figma-frame-node" id="desktop-frame">
           <div class="figma-frame-label">
             <span class="frame-icon">#</span>
-            <span class="frame-text">Sonji Web - Desktop Landing</span>
+            <span class="frame-text">AppStock EXCHANGE - Desktop Landing</span>
           </div>
           
           <!-- Web Viewport inside the Figma frame -->
@@ -136,22 +142,31 @@
               <div class="container nav-container">
                 <div class="logo">
                   <a href="index.html" class="logo-link">
-                    <span class="logo-dot"></span>
-                    Sonji
+                    <svg viewBox="0 0 24 24" class="logo-icon" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                      <polyline points="2 17 12 22 22 17"></polyline>
+                      <polyline points="2 12 12 17 22 12"></polyline>
+                    </svg>
+                    <div class="logo-text-group">
+                      <span class="logo-brand">AppStock</span>
+                      <span class="logo-sub">EXCHANGE</span>
+                    </div>
                   </a>
                 </div>
                 <nav>
                   <a href="index.html" class="active">Home</a>
                   <a href="about.html">About</a>
                   <a href="services.html">Services</a>
-                  <a href="categories.html">App Stock</a>
-                  <a href="contact.html">Contact</a>
+                  <a href="categories.html">News</a>
+                  <a href="gtm-expert.html">GTM Expert</a>
+                  <a href="contact.html">Contact Us</a>
                 </nav>
                 <div class="header-actions">
-                  <button class="btn btn-secondary btn-sm search-btn" aria-label="Search">
-                    <svg class="icon" viewBox="0 0 24 24" width="16" height="16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m21 21-6-6m2-5a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z"/></svg>
-                  </button>
-                  <a href="contact.html" class="btn btn-sm">Get Started</a>
+                  <a href="#" class="btn-login">Log In</a>
+                  <a href="contact.html" class="btn-signup">
+                    Sign Up
+                    <span class="arrow-circle">&#x2197;</span>
+                  </a>
                 </div>
               </div>
             </header>
@@ -159,15 +174,107 @@
             <!-- Hero Section -->
             <section class="hero-section" id="hero-section">
               <div class="hero-sticky-container">
-                <canvas id="exploded-canvas" class="hero-canvas-bg"></canvas>
+                <div class="hero-cubes-container">
+                  <div class="cube-wrapper cube-left" id="cube-left">
+                    <div class="cube">
+                      <div class="slice slice-5">
+                        <div class="face top"></div>
+                        <div class="face front"></div>
+                        <div class="face side"></div>
+                      </div>
+                      <div class="slice slice-4">
+                        <div class="face top"></div>
+                        <div class="face front"></div>
+                        <div class="face side"></div>
+                      </div>
+                      <div class="slice slice-3">
+                        <div class="face top"></div>
+                        <div class="face front"></div>
+                        <div class="face side"></div>
+                      </div>
+                      <div class="slice slice-2">
+                        <div class="face top"></div>
+                        <div class="face front"></div>
+                        <div class="face side"></div>
+                      </div>
+                      <div class="slice slice-1">
+                        <div class="face top"></div>
+                        <div class="face front"></div>
+                        <div class="face side"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cube-wrapper cube-middle" id="cube-middle">
+                    <div class="cube">
+                      <div class="slice slice-5">
+                        <div class="face top"></div>
+                        <div class="face front"></div>
+                        <div class="face side"></div>
+                      </div>
+                      <div class="slice slice-4">
+                        <div class="face top"></div>
+                        <div class="face front"></div>
+                        <div class="face side"></div>
+                      </div>
+                      <div class="slice slice-3">
+                        <div class="face top"></div>
+                        <div class="face front"></div>
+                        <div class="face side"></div>
+                      </div>
+                      <div class="slice slice-2">
+                        <div class="face top"></div>
+                        <div class="face front"></div>
+                        <div class="face side"></div>
+                      </div>
+                      <div class="slice slice-1">
+                        <div class="face top"></div>
+                        <div class="face front"></div>
+                        <div class="face side"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cube-wrapper cube-right" id="cube-right">
+                    <div class="cube">
+                      <div class="slice slice-5">
+                        <div class="face top"></div>
+                        <div class="face front"></div>
+                        <div class="face side"></div>
+                      </div>
+                      <div class="slice slice-4">
+                        <div class="face top"></div>
+                        <div class="face front"></div>
+                        <div class="face side"></div>
+                      </div>
+                      <div class="slice slice-3">
+                        <div class="face top"></div>
+                        <div class="face front"></div>
+                        <div class="face side"></div>
+                      </div>
+                      <div class="slice slice-2">
+                        <div class="face top"></div>
+                        <div class="face front"></div>
+                        <div class="face side"></div>
+                      </div>
+                      <div class="slice slice-1">
+                        <div class="face top"></div>
+                        <div class="face front"></div>
+                        <div class="face side"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
                 <div class="hero-overlay"></div>
                 <div class="container hero-container">
-                  <span class="badge">Introducing Sonji v1.0</span>
+                  <span class="badge">Introducing AppStock v1.0</span>
                   <h1 class="hero-title">The Next Generation of Digital Assets</h1>
                   <p class="hero-subtitle">Elevate your creative workflow with curated, premium assets, high-fidelity source code templates, and developer stock optimized for seamless integration.</p>
                   <div class="hero-ctas">
-                    <a href="categories.html" class="btn">Explore Asset Stock</a>
-                    <a href="about.html" class="btn btn-secondary">Learn More &rarr;</a>
+                    <a href="categories.html" class="btn btn-primary">Get Started</a>
+                    <a href="contact.html" class="btn btn-outline">Book a Demo</a>
+                    <a href="gtm-expert.html" class="btn-link-playground">
+                      Try the playground
+                      <span class="arrow-icon">&rarr;</span>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -604,7 +711,7 @@
               <div class="container">
                 <div class="section-header">
                   <span class="section-tag">Workflow</span>
-                  <h2>How Sonji Empowers Creators</h2>
+                  <h2>How AppStock EXCHANGE Empowers Creators</h2>
                   <p class="section-desc">Get beautiful assets from concept to production in less time than ever.</p>
                 </div>
 
@@ -639,13 +746,159 @@
               </div>
             </section>
 
+            <!-- GTM / CTA Expert Section -->
+            <section id="gtm-cta-section" class="gtm-cta-section">
+              <div class="container">
+                <div class="section-header">
+                  <span class="section-tag">AI-Powered Marketing</span>
+                  <h2>GTM / CTA Expert</h2>
+                  <p class="section-desc">Generate high-converting go-to-market strategies, ad copy, and call-to-action frameworks powered by creative AI. Built for growth-focused teams and independent creators.</p>
+                </div>
+
+                <div class="gtm-layout">
+                  <!-- Left: Mode Selector -->
+                  <div class="gtm-sidebar">
+                    <div class="gtm-mode-btn active" data-mode="launch">
+                      <div class="gtm-mode-icon">🚀</div>
+                      <div class="gtm-mode-info">
+                        <span class="gtm-mode-title">Launch Campaign</span>
+                        <span class="gtm-mode-desc">Full GTM strategy</span>
+                      </div>
+                    </div>
+                    <div class="gtm-mode-btn" data-mode="adcopy">
+                      <div class="gtm-mode-icon">✍️</div>
+                      <div class="gtm-mode-info">
+                        <span class="gtm-mode-title">Ad Copy</span>
+                        <span class="gtm-mode-desc">Headlines & hooks</span>
+                      </div>
+                    </div>
+                    <div class="gtm-mode-btn" data-mode="cta">
+                      <div class="gtm-mode-icon">🎯</div>
+                      <div class="gtm-mode-info">
+                        <span class="gtm-mode-title">CTA Generator</span>
+                        <span class="gtm-mode-desc">Action-driving CTAs</span>
+                      </div>
+                    </div>
+                    <div class="gtm-mode-btn" data-mode="abtest">
+                      <div class="gtm-mode-icon">⚖️</div>
+                      <div class="gtm-mode-info">
+                        <span class="gtm-mode-title">A/B Testing</span>
+                        <span class="gtm-mode-desc">Variant comparison</span>
+                      </div>
+                    </div>
+                    <div class="gtm-stats-mini">
+                      <div class="stat-pill">
+                        <span class="stat-pill-val">8.4%</span>
+                        <span class="stat-pill-label">Conv. Rate</span>
+                      </div>
+                      <div class="stat-pill">
+                        <span class="stat-pill-val">5.6x</span>
+                        <span class="stat-pill-label">ROAS</span>
+                      </div>
+                      <div class="stat-pill">
+                        <span class="stat-pill-val">3.1%</span>
+                        <span class="stat-pill-label">CTR</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Center: Generator Interface -->
+                  <div class="gtm-main">
+                    <div class="gtm-prompt-area">
+                      <div class="gtm-prompt-header">
+                        <span class="gtm-ai-badge">
+                          <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                          AppStock EXCHANGE AI Expert
+                        </span>
+                        <span class="gtm-mode-label" id="gtm-active-label">Launch Campaign Mode</span>
+                      </div>
+                      <div class="gtm-input-wrapper">
+                        <textarea class="gtm-input" id="gtm-input" placeholder="Describe your product, target audience, or campaign goal… e.g. 'SaaS tool for remote teams, B2B, launch in Q3'" rows="3"></textarea>
+                        <button class="btn gtm-generate-btn" id="gtm-generate-btn">
+                          <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                          Generate
+                        </button>
+                      </div>
+                    </div>
+
+                    <!-- Output Cards -->
+                    <div class="gtm-output" id="gtm-output">
+                      <div class="gtm-output-card featured">
+                        <div class="gtm-output-badge">⭐ Best Match</div>
+                        <div class="gtm-output-type">Conversion-Focused CTA</div>
+                        <div class="gtm-output-text">"Start Your Free Trial — No Credit Card Required"</div>
+                        <div class="gtm-output-meta">
+                          <span class="gtm-score">Score: 94/100</span>
+                          <span class="gtm-channel">📱 Mobile & Web</span>
+                        </div>
+                        <div class="gtm-output-actions">
+                          <button class="btn btn-sm gtm-copy-btn" onclick="navigator.clipboard.writeText('Start Your Free Trial — No Credit Card Required')">Copy</button>
+                          <button class="btn btn-secondary btn-sm">Refine</button>
+                        </div>
+                      </div>
+
+                      <div class="gtm-output-card">
+                        <div class="gtm-output-type">Urgency Hook</div>
+                        <div class="gtm-output-text">"Limited Beta Access — Join 2,400+ Teams Already Inside"</div>
+                        <div class="gtm-output-meta">
+                          <span class="gtm-score">Score: 87/100</span>
+                          <span class="gtm-channel">📧 Email & Landing</span>
+                        </div>
+                        <div class="gtm-output-actions">
+                          <button class="btn btn-sm gtm-copy-btn" onclick="navigator.clipboard.writeText('Limited Beta Access — Join 2,400+ Teams Already Inside')">Copy</button>
+                          <button class="btn btn-secondary btn-sm">Refine</button>
+                        </div>
+                      </div>
+
+                      <div class="gtm-output-card">
+                        <div class="gtm-output-type">Value Proposition</div>
+                        <div class="gtm-output-text">"Ship 3× Faster. Design with Precision. Get AppStock EXCHANGE Now."</div>
+                        <div class="gtm-output-meta">
+                          <span class="gtm-score">Score: 82/100</span>
+                          <span class="gtm-channel">🖥 Display & Social</span>
+                        </div>
+                        <div class="gtm-output-actions">
+                          <button class="btn btn-sm gtm-copy-btn" onclick="navigator.clipboard.writeText('Ship 3× Faster. Design with Precision. Get AppStock EXCHANGE Now.')">Copy</button>
+                          <button class="btn btn-secondary btn-sm">Refine</button>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="gtm-footer-row">
+                      <span class="gtm-tip">💡 Pro tip: Include your unique selling proposition and audience pain point for highest-quality outputs.</span>
+                      <a href="gtm-expert.html" class="btn btn-secondary btn-sm">Open Full Tool →</a>
+                    </div>
+                  </div>
+
+                  <!-- Right: Preview Visual -->
+                  <div class="gtm-preview-panel">
+                    <div class="gtm-preview-header">
+                      <span>Live Preview</span>
+                      <span class="gtm-preview-status">● Active</span>
+                    </div>
+                    <img src="assets/images/gtm_expert_ui.png" alt="GTM Expert Interface Preview" class="gtm-preview-img">
+                    <div class="gtm-kpi-grid">
+                      <div class="gtm-kpi">
+                        <div class="gtm-kpi-val">+127%</div>
+                        <div class="gtm-kpi-label">CTR Improvement</div>
+                      </div>
+                      <div class="gtm-kpi">
+                        <div class="gtm-kpi-val">2.4s</div>
+                        <div class="gtm-kpi-label">Avg. Generation Time</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
             <!-- About / Info Section -->
             <section id="about-info-section" class="about-info-section">
               <div class="container info-grid">
                 <div class="info-content">
                   <span class="section-tag">Our Vision</span>
                   <h2>Building the Future of Asset Distribution</h2>
-                  <p>Sonji is founded on the principle that digital assets shouldn't just look pretty—they need to perform, scale, and integrate beautifully into real-world codebases. We bridges the gap between high-end visual design and modern engineering standards.</p>
+                  <p>AppStock EXCHANGE is founded on the principle that digital assets shouldn't just look pretty—they need to perform, scale, and integrate beautifully into real-world codebases. We bridges the gap between high-end visual design and modern engineering standards.</p>
                   <p>Our dedicated team of curators and developers ensures that each stock element follows current best practices, accessible contrast standards, and lightweight load requirements.</p>
                   <a href="about.html" class="btn btn-secondary">Read Our Story</a>
                 </div>
@@ -676,7 +929,7 @@
                 <div class="contact-header">
                   <span class="section-tag">Let's Connect</span>
                   <h2>Request Early Platform Access</h2>
-                  <p>Be the first to know when Sonji launches. Sign up to get custom digital assets, beta builds, and special launch offers directly in your inbox.</p>
+                  <p>Be the first to know when AppStock EXCHANGE launches. Sign up to get custom digital assets, beta builds, and special launch offers directly in your inbox.</p>
                 </div>
 
                 <form class="contact-form" onsubmit="event.preventDefault(); alert('Lead Form Submissions are disabled in Phase 1.');">
@@ -704,15 +957,19 @@
               <div class="container footer-container">
                 <div class="footer-brand">
                   <div class="logo">
-                    <span class="logo-dot"></span>
-                    Sonji
+                    <svg viewBox="0 0 24 24" class="logo-icon" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 6px; color: #1d4ed8;">
+                      <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                      <polyline points="2 17 12 22 22 17"></polyline>
+                      <polyline points="2 12 12 17 22 12"></polyline>
+                    </svg>
+                    <span style="font-weight: 700; color: #fff; font-family: var(--font-heading);">AppStock</span>
                   </div>
                   <p>Curating high-performance assets for the modern web.</p>
                 </div>
                 <div class="footer-links">
                   <div class="link-group">
                     <h4>Explore</h4>
-                    <a href="categories.html">App Stock</a>
+                    <a href="categories.html">News</a>
                     <a href="services.html">Platform Features</a>
                   </div>
                   <div class="link-group">
@@ -723,7 +980,7 @@
                 </div>
               </div>
               <div class="footer-bottom">
-                <p>&copy; 2026 Sonji Inc. All rights reserved. ASE Project Prototype.</p>
+                <p>&copy; 2026 AppStock Inc. All rights reserved. ASE Project Prototype.</p>
               </div>
             </footer>
 
@@ -772,7 +1029,7 @@
 
             <div class="sidebar-header">Layer Styling Spec</div>
             <div class="property-grid">
-              <div class="property-item full-width"><span class="prop-label">Layer</span><span class="prop-val text-truncate" id="selected-layer-name">❖ Sonji Web - Desktop Landing</span></div>
+              <div class="property-item full-width"><span class="prop-label">Layer</span><span class="prop-val text-truncate" id="selected-layer-name">❖ AppStock EXCHANGE - Desktop Landing</span></div>
               <div class="property-item"><span class="prop-label">Opacity</span><span class="prop-val">100%</span></div>
               <div class="property-item"><span class="prop-label">Blend</span><span class="prop-val">Normal</span></div>
             </div>

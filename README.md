@@ -1,6 +1,6 @@
-# Sonji Premium Static Prototype
+# AppStock EXCHANGE Premium Static Prototype
 
-A high‑end, Apple‑style static website prototype for the **ASE Project (Sonji)**.
+A high‑end, Apple‑style static website prototype for the **AppStock EXCHANGE**.
 
 ## Project Structure
 ```
@@ -27,7 +27,7 @@ sonji/
 ```bash
 npx -y serve ./
 ```
-3. Open `http://localhost:3000` in a browser.
+3. Open the localhost URL in a browser.
 
 The site is fully static – no backend required.
 
